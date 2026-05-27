@@ -28,7 +28,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-import core.state as state
+import state
 
 state.init()
 
