@@ -81,43 +81,25 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 ])
 
 with tab1:
-    try:
-        from pages import dashboard
-        dashboard.render()
-    except ImportError:
-        st.error("Dashboard module not found")
+    from pages import dashboard
+    dashboard.render()
 
 with tab2:
-    try:
-        from pages import market
-        market.render()
-    except ImportError:
-        st.error("Market module not found")
+    from pages import market
+    market.render()
 
 with tab3:
-    try:
-        from pages import strategy
-        strategy.render()
-    except ImportError:
-        st.error("Strategy module not found")
+    from pages import strategy
+    strategy.render()
 
 with tab4:
-    try:
-        from pages import risk
-        risk.render()
-    except ImportError:
-        st.error("Risk module not found")
+    from pages import risk
+    risk.render()
 
 with tab5:
-    try:
-        from pages import backtest
-        backtest.render()
-    except ImportError:
-        st.error("Backtest module not found")
+    from pages import backtest
+    backtest.render()
 
 with tab6:
-    try:
-        from pages import portfolio
-        portfolio.render()
-    except ImportError:
-        st.error("Portfolio module not found")
+    from pages import portfolio
+    portfolio.render()
